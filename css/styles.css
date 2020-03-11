@@ -1,0 +1,333 @@
+html{
+  height: 100%;
+}
+
+body{
+  background: -webkit-linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  color: white;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 600;
+  height: 94%;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  width: 375px;
+}
+
+/* game header container */
+.header-container {
+  height: 100px;
+  margin: 50px auto;
+  padding: 25px 25px 15px 25px;
+  position: relative;
+  width: 90%;
+  z-index: 2;
+}
+
+.title {
+  height: 65px;
+  position: absolute;
+  left: 25px;
+}
+
+.score {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  color: hsl(229, 64%, 46%);
+  display: inline-block;
+  padding: 10px 0 10px 0;
+  position: absolute;
+  right: 25px;
+  text-align: center;
+  width: 100px;
+}
+
+#score {
+  color:  rgb(96,96,96);
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+#rps {
+  margin-top: 10px;
+}
+
+/* Game content */
+.btn1{
+  top: -50px;
+  left: 20px;
+}
+.btn2{
+  top: -50px;
+  right: 20px;
+}
+.btn3{
+  top: 125px;
+  left: 125px;
+}
+.cir-btn, #radial-win {
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 13px;
+  height: 125px;
+  position: absolute;
+  width: 125px;
+}
+.cir-btn {
+  z-index: 1;
+}
+.game{
+  height: 70%;
+  margin-top: 20%;
+  position: relative;
+  width: 375px;
+}
+.rules-container {
+  background: white;
+  color: hsl(229, 25%, 31%);
+  font-size: 2rem;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.triangle {
+  display: block;
+  margin: 100px auto;
+  height: 200px;
+  width: 200px;
+}
+#rock, #rock2 {
+  border-color: hsl(349, 70%, 56%);
+  box-shadow: 0 5px 0 0 hsl(349, 70%, 50%),
+    inset 0 7px 0 0 rgb(200,200,200);
+}
+#paper, #paper2 {
+  border-color: hsl(230, 89%, 65%);
+  box-shadow: 0 5px 0 0 hsl(230, 89%, 62%),
+    inset 0 7px 0 0 rgb(200,200,200);
+}
+#scissors, #scissors2 {
+  border-color: hsl(40, 84%, 53%);
+  box-shadow: 0 5px 0 0 hsl(39, 89%, 49%),
+    inset 0 7px 0 0 rgb(200,200,200);
+}
+#rules-image {
+  display: block;
+  margin: 20% auto 20% auto;
+}
+
+/* Game Switches */
+.btn-left1, .btn-right1, .btn-left2, .btn-right2{
+  top: 0;
+}
+.btn-left1, .btn-left2{
+  left: 0;
+}
+.btn-right1, .btn-right2{
+  right: 0;
+}
+.hp1, .hp2{
+  position: absolute;
+  right: 0;
+  top: 175px;
+}
+.lose{
+  left: 80px;
+}
+.off {
+  display: none;
+}
+#radial-win{
+  box-shadow: 0 0 10px 50px hsl(214, 47%, 23%),
+    0 0 10px 100px hsl(220, 46%, 20%),
+    0 0 10px 50px hsl(225, 45%, 17%);
+}
+.replay{
+  background-color: white;
+  border: 0;
+  border-radius: 15px;
+  bottom: 125px;
+  color: hsl(237, 49%, 15%);
+  font-size: 1.25rem;
+  height: 30px;
+  left: 87.5px;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+}
+.win, .lose, .draw{
+  bottom: 200px;
+  font-size: 4rem;
+  position: absolute;
+  z-index:1;
+}
+.win{
+  left:90px ;
+}
+.draw{
+  left: 120px;
+}
+.yp1, .yp2{
+  left: 20px;
+  position: absolute;
+  top: 175px;
+}
+
+/* Other */
+.btn {
+  border: 3px;
+  border-radius: 15px;
+  border-color: hsl(217, 16%, 45%);
+  border-style: solid;
+}
+
+.rules{
+  background-color: hsl(237, 49%, 15%);
+  bottom: 25px;
+  color: white;
+  font-size: 1.15rem;
+  letter-spacing: 1.5px;
+  padding: 15px;
+  position: absolute;
+  right: 90px;
+  text-align: center;
+  width: 175px;
+}
+
+.pressed{
+  background-color: grey;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1366px) {
+  body {
+    width: 1366px;
+  }
+  .btn1{
+    top: -50px;
+    left: 425px;
+  }
+  .btn2{
+    top: -50px;
+    right: 425px;
+  }
+  .btn3{
+    left: 590px;
+    top: 175px;
+  }
+  .btn-icon{
+    width: 75px;
+  }
+  .cir-btn{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 20px;
+    height: 175px;
+    width: 175px;
+  }
+  .game {
+    margin-top: 5%;
+    width: 1366px;
+  }
+  .header-container {
+    width: 50%;
+  }
+  .rules-container {
+    border-radius: 10px;
+    height: 450px;
+    left: 40%;
+    padding: 25px 25px 0 25px;
+    text-align: left;
+    top: 10%;
+    width: 450px ;
+  }
+  .rules{
+    right: 50px;
+  }
+  .triangle {
+    width: 30%;
+    height: 55%
+  }
+  #close {
+    float: right;
+    margin-top: 15px;
+  }
+  /* Game Switches */
+  .btn-left1, .btn-right1, .btn-left2, .btn-right2, #radial-win{
+    border-width: 30px;
+    height: 250px;
+    width: 250px;
+    top: 75px;
+  }
+  .btn-left1{
+    left: 408px;
+  }
+  .btn-left2 {
+    left: 250px;
+  }
+  .btn-right1{
+    right: 408px;
+  }
+  .btn-right2{
+    right: 250px;
+  }
+  .hp1, .hp2{
+    position: absolute;
+    top: 0;
+  }
+  .hp1{
+    right: 483px;
+  }
+  .hp2{
+    right: 325px;
+  }
+  .lose{
+    left: 550px;
+  }
+  .replay{
+    top: 200px;
+    left:558px;
+    z-index: 3;
+  }
+  .win, .lose, .draw{
+    top: 100px;
+    font-size: 4rem;
+    position: absolute;
+  }
+  .win{
+    left:550px ;
+  }
+  .draw{
+    left:600px;
+  }
+  .yp1, .yp2{
+    position: absolute;
+    top: 0;
+  }
+  .yp1{
+    left: 483px;
+  }
+  .yp2{
+    left: 325px;
+  }
+  #radial-win{
+    box-shadow: 0 0 10px 100px hsl(214, 47%, 23%),
+      0 0 10px 200px hsl(220, 46%, 20%),
+      0 0 10px 30px hsl(225, 45%, 17%);
+  }
+}

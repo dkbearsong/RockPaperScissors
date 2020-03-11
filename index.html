@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+
+  <body>
+    <div class="rules-container off">
+      Rules
+      <img src="images\icon-close.svg" id="close" alt="close">
+      <img src="images\image-rules.svg" id="rules-image" alt="rules">
+    </div>
+    <div class="header-container btn">
+      <img class="title" src="images\logo.svg" alt="RockPaperScissors" id="rps">
+      <div class="score">
+        Score
+        <div id="score">0</div>
+      </div>
+    </div>
+    <div class="game">
+      <button class="cir-btn btn3" id="rock" type="button" name="rock"><img class="btn-icon" src="images\icon-rock.svg" alt="rock" name="rock"></button>
+      <button class="cir-btn btn1" id="paper" type="button" name="paper"><img class="btn-icon" src="images\icon-paper.svg" alt="paper" name="paper"></button>
+      <button class="cir-btn btn2" id="scissors" type="button" name="scissors"><img class="btn-icon" src="images\icon-scissors.svg" alt="scissors" name="scissors"></button>
+      <button class="off" id ="radial-win" type="button" name="button"></button>
+      <img class="triangle" src="images\bg-triangle.svg" alt="triangle">
+      <div class="yp1 off">You Picked</div>
+      <div class="hp1 off">The House Picked</div>
+      <div class="win off">You Win</div>
+      <div class="lose off">You Lose</div>
+      <div class="draw off">Draw</div>
+      <div class="replay off">Play Again</div>
+      <button class="btn rules" type="button" name="Rules" id="rules">RULES</button>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Dereck Bearsong</a>.
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</html>
