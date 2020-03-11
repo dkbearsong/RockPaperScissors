@@ -40,7 +40,7 @@ function playAgain() {
     }
     $('.yp2').removeClass('yp2').addClass('yp1');
     $('.hp2').removeClass('hp2').addClass('hp1');
-    $('#radial-win').removeClass('btn-left2 btn-right2').addClass('off');
+    $('#radial-win').addClass('off').removeClass('btn-left2 btn-right2');
     $('#rock').addClass('btn3').removeAttr('style').removeClass('btn-left2 btn-right2');
     $('#paper').addClass('btn1').removeAttr('style').removeClass('btn-left2 btn-right2');
     $('#scissors').addClass('btn2').removeAttr('style').removeClass('btn-left2 btn-right2');
